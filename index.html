@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Triệu Duy — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosep: {
+                            50:  '#fdf2f6',
+                            100: '#fce7ef',
+                            200: '#fbcfe0',
+                            300: '#f7aac6',
+                            400: '#f083a9',
+                            500: '#e85f8d',
+                            600: '#d94a78',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "DM Sans", system-ui, sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-rosep-50/40 text-neutral-900 antialiased selection:bg-rosep-300 selection:text-white">
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-rosep-100">
+        <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="#top" class="font-bold tracking-tight">Lê Triệu Duy</a>
+            <div class="hidden sm:flex items-center gap-6 text-sm text-neutral-600">
+                <a href="#skills" class="hover:text-rosep-600 transition">Kỹ năng</a>
+                <a href="#projects" class="hover:text-rosep-600 transition">Dự án</a>
+                <a href="#education" class="hover:text-rosep-600 transition">Học vấn</a>
+                <a href="#contact" class="hover:text-rosep-600 transition">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top" class="max-w-3xl mx-auto px-6 py-16 md:py-24">
+
+        <!-- Header -->
+        <header class="pb-12 mb-12 border-b border-rosep-100">
+            <div class="flex flex-col gap-8">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-6">
+                    <div class="shrink-0">
+                        <div class="p-1.5 rounded-full bg-rosep-100 inline-block">
+                            <img
+                                src="assets/avatar.png"
+                                alt="Lê Triệu Duy"
+                                class="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover object-top ring-2 ring-white"
+                                width="128"
+                                height="128"
+                            >
+                        </div>
+                    </div>
+                    <div class="min-w-0">
+                        <span class="inline-block mb-3 px-3 py-1 text-xs font-medium rounded-full bg-rosep-100 text-rosep-600">
+                            ● Sẵn sàng thực tập
+                        </span>
+                        <h1 class="text-3xl font-bold tracking-tight mb-2">Lê Triệu Duy</h1>
+                        <p class="text-neutral-700 text-lg mb-3">Thực tập sinh Full-stack Developer</p>
+                        <p class="text-neutral-500 text-sm max-w-lg leading-relaxed mb-4">
+                            Sinh viên CNTT (GPA: 3.58/4.0), định hướng Full-stack với Java Spring Boot và React.
+                            Có kinh nghiệm tự thiết kế hệ thống thương mại điện tử và lập trình mạng thời gian thực.
+                        </p>
+                        <p class="text-neutral-500 text-sm">
+                            TP. Hồ Chí Minh ·
+                            <a href="tel:0968794894" class="hover:text-rosep-600 transition">0968 794 894</a> ·
+                            <a href="mailto:duyle3352@gmail.com" class="hover:text-rosep-600 transition">duyle3352@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <a href="mailto:duyle3352@gmail.com" class="px-4 py-2 text-sm font-medium bg-rosep-500 text-white rounded-md hover:bg-rosep-600 transition">
+                        Email
+                    </a>
+                    <a href="https://github.com/rosdev7" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-sm font-medium border border-rosep-200 rounded-md hover:bg-rosep-50 transition">
+                        GitHub
+                    </a>
+                    <a href="assets/CV_Le_Trieu_Duy.pdf" download class="px-4 py-2 text-sm font-medium border border-rosep-200 rounded-md hover:bg-rosep-50 transition">
+                        Tải CV (PDF)
+                    </a>
+                    <a href="https://zalo.me/0968794894" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-sm font-medium border border-rosep-200 rounded-md hover:bg-rosep-50 transition">
+                        Zalo
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Kỹ năng -->
+        <section id="skills" class="mb-12 scroll-mt-20">
+            <h2 class="text-xl font-bold tracking-tight mb-6 flex items-center gap-2">
+                <span class="w-1.5 h-6 bg-rosep-400 rounded-full"></span>
+                Kỹ năng kỹ thuật
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 transition">
+                    <span class="font-semibold block mb-2">Ngôn ngữ</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Java</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">JavaScript (ES6+)</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">C#</span>
+                    </div>
+                </div>
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 transition">
+                    <span class="font-semibold block mb-2">Backend</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Spring Boot</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Spring Security</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Spring Data JPA</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">RESTful API</span>
+                    </div>
+                </div>
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 transition">
+                    <span class="font-semibold block mb-2">Frontend</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">React</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">React Router</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Redux Toolkit</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 transition">
+                    <span class="font-semibold block mb-2">Database &amp; Bảo mật</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">SQL Server</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">JWT</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">RBAC</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Clean Architecture</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">OOP</span>
+                    </div>
+                </div>
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 transition sm:col-span-2">
+                    <span class="font-semibold block mb-2">Công cụ &amp; Dịch vụ</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Git</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">GitHub</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Docker</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">VNPay Sandbox</span>
+                        <span class="px-2.5 py-1 rounded-full bg-rosep-50 text-rosep-600 text-xs">Unity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dự án -->
+        <section id="projects" class="mb-12 scroll-mt-20">
+            <h2 class="text-xl font-bold tracking-tight mb-6 flex items-center gap-2">
+                <span class="w-1.5 h-6 bg-rosep-400 rounded-full"></span>
+                Dự án tiêu biểu
+            </h2>
+
+            <div class="space-y-6">
+                <article class="p-6 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 hover:shadow-sm hover:shadow-rosep-100 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-2 gap-1">
+                        <h3 class="font-bold text-lg">Ros Watch Shop</h3>
+                        <span class="text-xs text-neutral-500 shrink-0">2023 – 2024</span>
+                    </div>
+                    <p class="text-xs text-rosep-600 font-mono mb-3">React · Spring Boot · SQL Server · JWT · Docker · VNPay</p>
+                    <p class="text-neutral-600 text-sm mb-3 leading-relaxed">
+                        Website thương mại điện tử bán đồng hồ: khách hàng duyệt sản phẩm, giỏ hàng, thanh toán;
+                        admin quản lý kho, thương hiệu, đơn hàng và thống kê doanh thu.
+                    </p>
+                    <ul class="text-neutral-600 text-sm mb-4 space-y-1.5 leading-relaxed">
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> Xây RESTful API với Spring Boot + JPA (giỏ hàng, đặt hàng, thống kê)</li>
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> SPA React + Redux Toolkit; bảo mật JWT / Spring Security</li>
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> Tích hợp VNPay Sandbox, email khôi phục mật khẩu, đóng gói Docker</li>
+                    </ul>
+                    <p class="text-xs text-neutral-500 mb-4">Vai trò: Full-stack Developer</p>
+                    <a href="https://github.com/rosdev7/RosWatch8" target="_blank" rel="noopener noreferrer" class="inline-block px-3 py-1.5 text-xs font-medium bg-rosep-500 text-white rounded-md hover:bg-rosep-600 transition">
+                        Source Code
+                    </a>
+                </article>
+
+                <article class="p-6 bg-white border border-rosep-100 rounded-xl hover:border-rosep-300 hover:shadow-sm hover:shadow-rosep-100 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-2 gap-1">
+                        <h3 class="font-bold text-lg">BombTank Multiplayer</h3>
+                        <span class="text-xs text-neutral-500 shrink-0">2025 – 2026</span>
+                    </div>
+                    <p class="text-xs text-rosep-600 font-mono mb-3">C# · Unity · Netcode for GameObjects</p>
+                    <p class="text-neutral-600 text-sm mb-3 leading-relaxed">
+                        Game 2D đối kháng thời gian thực qua mạng LAN (Host–Client): thu thập xu, chiến đấu, bảng xếp hạng.
+                    </p>
+                    <ul class="text-neutral-600 text-sm mb-4 space-y-1.5 leading-relaxed">
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> Kiến trúc mạng Host–Client, đồng bộ vị trí và trạng thái trận đấu</li>
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> Điều khiển xe tăng, thiết kế map, HUD (kill feed, timer, respawn, ping)</li>
+                        <li class="flex gap-2"><span class="text-rosep-400 mt-0.5">▹</span> Nhóm trưởng 6 thành viên: điều phối, Git, tích hợp module, đóng gói build</li>
+                    </ul>
+                    <p class="text-xs text-neutral-500 mb-4">Vai trò: Nhóm trưởng · Game Developer</p>
+                    <a href="https://github.com/rosdev29/BombTank-Multiplayer" target="_blank" rel="noopener noreferrer" class="inline-block px-3 py-1.5 text-xs font-medium bg-rosep-500 text-white rounded-md hover:bg-rosep-600 transition">
+                        Source Code
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Học vấn -->
+        <section id="education" class="mb-12 scroll-mt-20">
+            <h2 class="text-xl font-bold tracking-tight mb-6 flex items-center gap-2">
+                <span class="w-1.5 h-6 bg-rosep-400 rounded-full"></span>
+                Học vấn &amp; chứng chỉ
+            </h2>
+            <div class="space-y-4 text-sm">
+                <div class="p-4 bg-white border border-rosep-100 rounded-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-2">
+                        <span class="font-semibold">Đại học Giao thông Vận tải TP.HCM</span>
+                        <span class="text-xs text-neutral-500 shrink-0">2023 – 2027</span>
+                    </div>
+                    <p class="text-neutral-600 mb-2">Ngành Công nghệ thông tin · GPA 3.58/4.0</p>
+                    <ul class="text-neutral-600 space-y-1">
+                        <li class="flex gap-2"><span class="text-rosep-400">▹</span> Học bổng xuất sắc 3 lần (2 HK năm nhất, HK1 năm ba)</li>
+                        <li class="flex gap-2"><span class="text-rosep-400">▹</span> Sinh viên 5 tốt cấp Liên chi hội – Viện CNTT và Điện – Điện tử (2023–2024)</li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 bg-white border border-rosep-100 rounded-xl">
+                        <span class="font-semibold block mb-1">Chứng chỉ</span>
+                        <span class="text-neutral-600">Full-Stack Software Engineering — LetDiv (LD25028) · 10/2026</span>
+                    </div>
+                    <div class="p-4 bg-white border border-rosep-100 rounded-xl">
+                        <span class="font-semibold block mb-1">Ngoại ngữ</span>
+                        <span class="text-neutral-600">Tiếng Anh — hoàn thành chương trình B1 tại trường</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liên hệ -->
+        <section id="contact" class="mb-12 scroll-mt-20">
+            <div class="p-8 bg-rosep-100 rounded-2xl text-center">
+                <h2 class="text-xl font-bold tracking-tight mb-2">Cùng làm việc nhé!</h2>
+                <p class="text-neutral-600 text-sm mb-6 max-w-md mx-auto leading-relaxed">
+                    Mình đang tìm cơ hội thực tập Full-stack. Nếu thấy phù hợp, cứ liên hệ với mình qua email hoặc Zalo.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="mailto:duyle3352@gmail.com" class="px-5 py-2.5 text-sm font-medium bg-rosep-500 text-white rounded-md hover:bg-rosep-600 transition">
+                        duyle3352@gmail.com
+                    </a>
+                    <a href="https://zalo.me/0968794894" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-sm font-medium bg-white border border-rosep-200 rounded-md hover:bg-rosep-50 transition">
+                        Zalo: 0968 794 894
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-rosep-100 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm text-neutral-500">
+            <p>© 2026 Lê Triệu Duy</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="mailto:duyle3352@gmail.com" class="hover:text-rosep-600 transition">Email</a>
+                <a href="https://github.com/rosdev7" target="_blank" rel="noopener noreferrer" class="hover:text-rosep-600 transition">GitHub</a>
+                <a href="https://zalo.me/0968794894" target="_blank" rel="noopener noreferrer" class="hover:text-rosep-600 transition">Zalo</a>
+                <a href="assets/CV_Le_Trieu_Duy.pdf" download class="hover:text-rosep-600 transition">CV</a>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
