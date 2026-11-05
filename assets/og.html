@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body {
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:#fdf2f6;
+    display:flex; align-items:center; gap:56px;
+    padding:0 90px;
+    position:relative;
+  }
+  .bar { position:absolute; left:0; top:0; bottom:0; width:16px; background:#e85f8d; }
+  .photo {
+    width:300px; height:300px; border-radius:24px; object-fit:cover; object-position:top;
+    border:6px solid #fff; box-shadow:0 20px 50px rgba(217,74,120,.25); flex-shrink:0;
+  }
+  .badge {
+    display:inline-block; background:#fce7ef; color:#d94a78;
+    font-size:22px; font-weight:600; padding:8px 20px; border-radius:999px; margin-bottom:22px;
+  }
+  .name { font-size:72px; font-weight:800; color:#111827; letter-spacing:-1px; line-height:1.05; }
+  .role { font-size:34px; color:#d94a78; font-weight:600; margin-top:10px; }
+  .tags { margin-top:26px; display:flex; gap:12px; flex-wrap:wrap; }
+  .tag { background:#fff; border:1px solid #fbcfe0; color:#be3d6b; font-size:22px; font-weight:600; padding:8px 18px; border-radius:12px; }
+  .url { position:absolute; right:90px; bottom:46px; font-size:24px; color:#9ca3af; font-weight:600; }
+</style>
+</head>
+<body>
+  <div class="bar"></div>
+  <img class="photo" src="avatar.png" alt="">
+  <div>
+    <span class="badge">● Sẵn sàng thực tập</span>
+    <div class="name">Lê Triệu Duy</div>
+    <div class="role">Thực tập sinh Full-stack Developer</div>
+    <div class="tags">
+      <span class="tag">Java · Spring Boot</span>
+      <span class="tag">ReactJS</span>
+      <span class="tag">RESTful API</span>
+    </div>
+  </div>
+  <div class="url">rosdev7.github.io/portfolio</div>
+</body>
+</html>
