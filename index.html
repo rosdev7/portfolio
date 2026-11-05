@@ -32,26 +32,7 @@
     <meta name="twitter:description" content="Sinh viên CNTT (GPA 3.58/4.0), định hướng Full-stack với Java Spring Boot & ReactJS.">
     <meta name="twitter:image" content="https://rosdev7.github.io/portfolio/assets/og.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        rosep: {
-                            50:  '#fdf2f6',
-                            100: '#fce7ef',
-                            200: '#fbcfe0',
-                            300: '#f7aac6',
-                            400: '#f083a9',
-                            500: '#e85f8d',
-                            600: '#d94a78',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
@@ -348,6 +329,16 @@
     </button>
 
     <script>
+        // Lời chào cho ai mở Console (F12)
+        console.log(
+            "%cXin chào! 👋",
+            "font-size:20px;font-weight:700;color:#e85f8d"
+        );
+        console.log(
+            "%cCảm ơn bạn đã ghé xem portfolio của mình.\nLiên hệ: duyle3352@gmail.com · github.com/rosdev7",
+            "font-size:13px;color:#6b7280"
+        );
+
         // Hiện dần khi cuộn tới
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
